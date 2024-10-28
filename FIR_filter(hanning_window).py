@@ -10,7 +10,7 @@ M = 21      # Filter length
 
 # Normalize frequencies
 normalized_fp = fp / (fs / 2)  # Normalize passband edge frequency
-normalized_fs = fsb / (fs / 2)  # Normalize stopband edge frequency
+normalized_fsb = fsb / (fs / 2)  # Normalize stopband edge frequency
 
 # Design the FIR filter using Hanning window
 filter_coefficients = firwin(M, normalized_fp, window='hann', pass_zero=False)
